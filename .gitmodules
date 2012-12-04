@@ -1,0 +1,6 @@
+[submodule "shopping-cart-tdd"]
+	path = shopping-cart-tdd
+	url = https://github.com/tonybaines/shopping-cart-tdd.git
+[submodule "FizzBuzz"]
+	path = FizzBuzz
+	url = https://github.com/tonybaines/FizzBuzz.git

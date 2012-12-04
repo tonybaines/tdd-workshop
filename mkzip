@@ -1,0 +1,22 @@
+#!/bin/bash
+ZIPFILE="tdd-workshop.zip"
+EXCLUDES_FILE=exclusions
+
+function exclude() {
+	echo $1
+	excl=$(find $(pwd) -type d -name $1)
+	echo $excl >> $EXCLUDES_FILE
+}
+
+rm -f "$ZIPFILE"
+rm -f "$EXCLUDES_FILE"
+
+echo 
+exclude ".git"
+exclude ".classes"
+exclude ".gradle"
+exclude ".settings"
+exclude "build"
+exclude "target"
+exclude "bin"
+zip -r "$ZIPFILE" . -x@"$EXCLUDES_FILE"
