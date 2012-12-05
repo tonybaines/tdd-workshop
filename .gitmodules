@@ -4,3 +4,6 @@
 [submodule "FizzBuzz"]
 	path = FizzBuzz
 	url = https://github.com/tonybaines/FizzBuzz.git
+[submodule "tdd-mock-objects"]
+	path = tdd-mock-objects
+	url = https://github.com/tonybaines/tdd-mock-objects.git
